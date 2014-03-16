@@ -8,7 +8,7 @@ xenserverでスナップショットを取得しスナップショットのuuid�
 
 # Quick Start
 
-* cfgファイルのUUID(vmno]uuid), xenserverのユーザとパスワード, メールを送る場合はtoとfromを変更してね。
+cfgファイルのUUID(vmのuuid), xenserverのユーザとパスワード, メールを送る場合はtoとfromを変更してね。
 
     % chmod +x xenserver-hotbackup.sh
     % vi xenserver-hotbackup.cfg
