@@ -262,7 +262,6 @@ sendMail()
     mkdir -p ${workdir} > /dev/null 2>&1
     buildHeaders 
     nc -i ${email_delay_interval} ${email_server} ${email_server_port} < ${email_log_content} > /dev/null 2>&1
-    echo " ${nc_bin} -i ${email_delay_interval} ${email_server} ${email_server_port}" > /tmp/b.txt
     if [ $? != 0 ] ; then
       errLog "failed to email log output to ${email_server}:${email_server_port} to ${email_to}"
     fi
